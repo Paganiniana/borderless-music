@@ -11,8 +11,5 @@ export default defineNuxtConfig({
 	auth: {
 		atproto: true,
 	},
-	vueMap: {
-		/** Options */
-	},
-	modules: ["nuxt-auth-utils", "nuxt-vue-map-ui"],
+	modules: ["nuxt-auth-utils"],
 });
