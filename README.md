@@ -1,12 +1,12 @@
-# Nuxt Example
+# Borderless.Music
 
-Deploy your [Nuxt](https://nuxt.com) project to Vercel with zero configuration.
+A social network for musical idealists.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/nuxtjs&template=nuxtjs)
-
-_Live Example: https://nuxtjs-template.vercel.app_
-
-Look at the [Nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+## Stack
+1. Server — [Nuxt on Vercel](https://vercel.com/docs/frameworks/full-stack/nuxt)
+2. Storage — [On-Demand Postgres via Prisma](https://www.prisma.io/postgres)
+3. Auth — [AT Proto Auth](https://github.com/atinux/nuxt-auth-utils)
+4. Map — [Map Libre](https://maplibre.org/)
 
 ## Setup
 
