@@ -10,6 +10,8 @@
 	},
 	"devDependencies": {
 		"@nuxt/devtools": "^1.0.3",
+		"@vicons/tabler": "^0.13.0",
+		"@vicons/utils": "^0.1.4",
 		"nuxt": "^3.8.2",
 		"nuxt-auth-utils": "^0.5.25",
 		"vue": "^3.3.8",

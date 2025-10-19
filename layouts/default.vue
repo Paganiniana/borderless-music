@@ -1,4 +1,26 @@
 <style>
+/* ---------------- GLOBALS --------------- */
+:root {
+    /* ------------------ Colors -------------- */
+    --off-white: #F0EDEE;
+    --off-black: #0F0F0A;
+    --prussian-blue: #003153;
+    --crimson: #D7263D;
+    --apple-green: #72B01D;
+    --sky-blue: #4CC9F0;
+    --xanthous: #F5B82E;
+}
+.glass {
+    background: rgba(240, 237, 238, 0.2); /* opaque off-white */
+    border-radius: 16px;
+    /*box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(240, 237, 238, 0.6); /* opaque off-white */
+}
+
+/* ---------- Layout - Foreground ---------- */
+
 .contents, .contents-background {
     position: fixed;
     left: 0px;
@@ -59,6 +81,13 @@
     }
 }
 
+.nav-menu {
+    pointer-events: all;
+    position: fixed;
+    left: var(--foreground-content-padding);
+    bottom: var(--foreground-content-padding);
+}
+
 
 /* ---------- Layout - Background ---------- */
 
@@ -74,6 +103,7 @@
     <div class="logo-container">
         <Image class="logo" :images="logoImages" alt="Borderless Logo" />
     </div>
+    <Nav class="nav-menu"/>
 </div>
 <div class="contents-background">
     <slot></slot>
@@ -81,7 +111,8 @@
 </template>
 
 <script setup lang="ts">
-import Image from '~/components/media/Image.vue';
+import Image from '@/components/media/Image.vue';
+import Nav from "@/components/Nav";
 
 const logoImages = [
   { url: '/images/logos/borderless-logo-210x24.png', width: 210, height: 24 },
