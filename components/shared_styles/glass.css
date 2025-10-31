@@ -1,6 +1,7 @@
 .glass {
+	--glass-border-radius: 16px;
 	background: rgba(240, 237, 238, 0.2); /* opaque off-white */
-	border-radius: 16px;
+	border-radius: var(--glass-border-radius);
 	/*box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);

@@ -87,17 +87,22 @@
     z-index: 1;
 }
 
+.map-container {
+    height: 100dvh;
+    width: 100dvw;
+}
 
 </style>
 
 <template>
+<div class="contents-background">
+    <WorldMap />
+</div>
 <div class="contents">
     <div class="logo-container">
         <Image class="logo" :images="logoImages" alt="Borderless Logo" />
     </div>
     <Nav profilePhoto="/profile_personal.jpeg" class="nav-menu"/>
-</div>
-<div class="contents-background">
     <slot></slot>
 </div>
 </template>
@@ -105,6 +110,7 @@
 <script setup lang="ts">
 import Image from "@/components/media/Image.vue";
 import Nav from "@/components/Nav.vue";
+import WorldMap from "@/components/map/WorldMap.vue";
 
 const logoImages = [
 	{ url: "/images/logos/borderless-logo-210x24.png", width: 210, height: 24 },
