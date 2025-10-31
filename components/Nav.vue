@@ -7,13 +7,6 @@ nav {
     overflow: hidden;
     border-radius: var(--nav-circle);
     pointer-events: all;
-
-    button {
-        background: transparent;
-        border: none;
-        outline:none;
-        cursor: pointer;
-    }
 }
 
 nav.closed {
@@ -73,7 +66,7 @@ ul {
         <ul>
             <li><NuxtLink to="/"><Icon :size="24" color="var(--off-white)"><VideoPlus/></Icon></NuxtLink></li>
             <li><NuxtLink to="/"><Icon :size="24" color="var(--off-white)"><Logout/></Icon></NuxtLink></li>
-            <li><button @click="toggleOpen"><Icon :size="24" color="var(--off-white)"><X/></Icon></button></li>
+            <li><IconButton @click="toggleOpen"><Icon :size="24" color="var(--off-white)"><X/></Icon></IconButton></li>
         </ul>
     </nav>
 </template>
