@@ -88,6 +88,15 @@
     bottom: var(--foreground-content-padding);
 }
 
+@media screen and (min-width: 850px) {
+    .nav-menu {
+        left: auto;
+        bottom: auto;
+        right: var(--foreground-content-padding);
+        top: var(--foreground-content-padding);
+    }
+}
+
 
 /* ---------- Layout - Background ---------- */
 
@@ -103,7 +112,7 @@
     <div class="logo-container">
         <Image class="logo" :images="logoImages" alt="Borderless Logo" />
     </div>
-    <Nav class="nav-menu"/>
+    <Nav profilePhoto="/profile_personal.jpeg" class="nav-menu"/>
 </div>
 <div class="contents-background">
     <slot></slot>
