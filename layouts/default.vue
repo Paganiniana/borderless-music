@@ -1,24 +1,7 @@
 <style>
-/* ---------------- GLOBALS --------------- */
-:root {
-    /* ------------------ Colors -------------- */
-    --off-white: #F0EDEE;
-    --off-black: #0F0F0A;
-    --prussian-blue: #003153;
-    --crimson: #D7263D;
-    --apple-green: #72B01D;
-    --sky-blue: #4CC9F0;
-    --xanthous: #F5B82E;
-}
-.glass {
-    background: rgba(240, 237, 238, 0.2); /* opaque off-white */
-    border-radius: 16px;
-    /*box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(240, 237, 238, 0.6); /* opaque off-white */
-}
-
+@import url("@components/shared_styles/colors.css");
+@import url("@components/shared_styles/hover.css");
+@import url("@components/shared_styles/glass.css");
 /* ---------- Layout - Foreground ---------- */
 
 .contents, .contents-background {
@@ -120,15 +103,19 @@
 </template>
 
 <script setup lang="ts">
-import Image from '@/components/media/Image.vue';
-import Nav from "@/components/Nav";
+import Image from "@/components/media/Image.vue";
+import Nav from "@/components/Nav.vue";
 
 const logoImages = [
-  { url: '/images/logos/borderless-logo-210x24.png', width: 210, height: 24 },
-  { url: '/images/logos/borderless-logo-280x32.png', width: 280, height: 32 },
-  { url: '/images/logos/borderless-logo-420x48.png', width: 420, height: 48 },
-  { url: '/images/logos/borderless-logo-560x64.png', width: 560, height: 64 },
-  { url: '/images/logos/borderless-logo-840x96.png', width: 840, height: 96 },
-  { url: '/images/logos/borderless-logo-1120x128.png', width: 1120, height: 128 },
+	{ url: "/images/logos/borderless-logo-210x24.png", width: 210, height: 24 },
+	{ url: "/images/logos/borderless-logo-280x32.png", width: 280, height: 32 },
+	{ url: "/images/logos/borderless-logo-420x48.png", width: 420, height: 48 },
+	{ url: "/images/logos/borderless-logo-560x64.png", width: 560, height: 64 },
+	{ url: "/images/logos/borderless-logo-840x96.png", width: 840, height: 96 },
+	{
+		url: "/images/logos/borderless-logo-1120x128.png",
+		width: 1120,
+		height: 128,
+	},
 ];
 </script>

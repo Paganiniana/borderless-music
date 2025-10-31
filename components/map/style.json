@@ -6,7 +6,7 @@
 	"sources": {
 		"maplibre-demotiles": {
 			"type": "vector",
-			"url": "https://demotiles.maplibre.org/tiles/tiles.json"
+			"url": "/tiles.json"
 		}
 	},
 	"layers": [
