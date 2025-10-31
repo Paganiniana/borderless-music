@@ -73,6 +73,11 @@
     justify-content: center;
 }
 
+.modal-controls .title {
+    color: var(--off-white);
+    font-size: 18px;
+}
+
 /* ---------------- contents ------------- */
 
 .modal-contents {

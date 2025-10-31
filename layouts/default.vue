@@ -1,4 +1,5 @@
 <style>
+@import url("@components/shared_styles/text.css");
 @import url("@components/shared_styles/colors.css");
 @import url("@components/shared_styles/hover.css");
 @import url("@components/shared_styles/glass.css");
